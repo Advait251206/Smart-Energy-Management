@@ -1,0 +1,31 @@
+/* src/components/BulbDisplay.css */
+.bulb-container {
+  margin-bottom: 2rem;
+}
+
+.bulb-icon {
+  transition: all 0.3s ease;
+}
+
+.bulb-icon.on {
+  fill: var(--glow-color);
+  filter: drop-shadow(0 0 1.5rem var(--glow-color));
+}
+
+.bulb-icon.off {
+  fill: #555555;
+}
+
+@keyframes discoGlow {
+  0%   { fill: #FF0000; filter: drop-shadow(0 0 1.5rem #FF0000); } /* Red */
+  20%  { fill: #00FF00; filter: drop-shadow(0 0 1.5rem #00FF00); } /* Green */
+  40%  { fill: #0000FF; filter: drop-shadow(0 0 1.5rem #0000FF); } /* Blue */
+  60%  { fill: #FFFF00; filter: drop-shadow(0 0 1.5rem #FFFF00); } /* Yellow */
+  80%  { fill: #FF00FF; filter: drop-shadow(0 0 1.5rem #FF00FF); } /* Pink */
+  100% { fill: #FF0000; filter: drop-shadow(0 0 1.5rem #FF0000); } /* Back to Red */
+}
+
+/* 2. Create a class that applies this animation when the bulb is ON */
+.bulb-icon.disco-effect {
+  animation: discoGlow 1.5s linear infinite;
+}

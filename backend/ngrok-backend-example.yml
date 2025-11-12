@@ -1,0 +1,8 @@
+# ngrok-backend.yml
+version: "2"
+authtoken: <PASTE_YOUR_BACKEND_ACCOUNT_AUTHTOKEN_HERE>
+
+tunnels:
+  backend:
+    proto: http
+    addr: 3000

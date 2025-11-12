@@ -1,0 +1,25 @@
+/* src/components/LedController.css */
+.led-controller-card {
+  background-color: #3a3a3a;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.led-controller-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 20px #00BFFF;
+}
+
+@media (max-width: 600px) {
+  .led-controller-card {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem;
+    width: 90%; 
+  }
+}
