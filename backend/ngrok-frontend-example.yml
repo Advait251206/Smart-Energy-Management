@@ -1,0 +1,8 @@
+# ngrok-frontend.yml
+version: "2"
+authtoken: <PASTE_YOUR_FRONTEND_ACCOUNT_AUTHTOKEN_HERE>
+
+tunnels:
+  frontend:
+    proto: http
+    addr: 5173

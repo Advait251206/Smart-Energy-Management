@@ -1,0 +1,15 @@
+{
+  "name": "smart-energy-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run start --prefix backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

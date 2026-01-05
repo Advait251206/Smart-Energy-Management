@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

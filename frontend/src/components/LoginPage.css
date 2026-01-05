@@ -1,0 +1,107 @@
+/* src/components/LoginPage.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.login-form {
+  background-color: #3a3a3a;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.5s ease-out;
+  text-align: center;
+}
+
+.icon-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00BFFF;
+}
+
+.login-form h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  
+  width: 90%; 
+  
+  margin: 0 auto; 
+  
+  display: block; 
+  
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #00BFFF;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00BFFF, #1E90FF);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 191, 255,.4);
+}
+
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
