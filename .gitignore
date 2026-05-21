@@ -1,23 +1,59 @@
-# Dependencies
+# Dependency directories
 node_modules/
 /node_modules
+**/node_modules/
 
-# Build
+# Production builds
 dist/
 build/
 out/
 .output/
 
-# Env and Config
-.env
-.env.local
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-coverage/
+pnpm-debug.log*
+lerna-debug.log*
 .ngrok.log
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment and sensitive configurations
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.shared.local
+*.env.local
+secrets.json
+credentials.json
+*API Keys.txt
+*Keys.txt
+
+# Testing coverage
+coverage/
+
+# ngrok local configuration and tokens
+.ngrok2/
+ngrok.yml
+ngrok-backend.yml
+ngrok-frontend.yml
